@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+nav.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav.navbar button {
+  background: #4facfe;
+  border: none;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+nav.navbar .logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.login-box {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.login-box input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 250px;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #4facfe;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #00f2fe;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.main-content {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+#weather {
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: #fff;
+}
+
+canvas {
+  background: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: block;
+  max-width: 90%;
+}
+
+#map {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
