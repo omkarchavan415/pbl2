@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <span class="logo">🌦️ Weather App</span>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('analytics')">Analytics</button>
+    <button onclick="showSection('map')">Map</button>
+    <button onclick="showSection('about')">About Us</button>
+  </nav>
+
+  <!-- Login Interface -->
+  <div id="login-container" class="login-box">
+    <h2>🔐 Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="login-error" class="error"></p>
+  </div>
+
+  <!-- Weather App Interface -->
+  <div id="weather-container" style="display:none;">
+    
+    <!-- Home Section -->
+    <div id="home-section" class="main-content">
+      <h1>🌤 Weather Forecast</h1>
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button onclick="getWeather()">Get Weather</button>
+      <button onclick="getWeatherByLocation()">📍 Use Current Location</button>
+      <div id="weather"></div>
+    </div>
+
+    <!-- Analytics Section -->
+    <div id="analytics-section" style="display:none;">
+      <h2>📊 Weather Analytics</h2>
+      <canvas id="tempChart"></canvas>
+      <canvas id="humidityWindChart"></canvas>
+      <canvas id="pressureChart"></canvas>
+    </div>
+
+    <!-- Map Section -->
+    <div id="map-section" style="display:none;">
+      <h2>🗺️ Interactive Weather Map</h2>
+      <div id="map" style="height: 400px;"></div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-section" style="display:none;">
+      <h2>👥 About Us</h2>
+      <p>This project was created by Omkar as part of a college PBL project.</p>
+      <p>Features include real-time weather, location-based search, interactive map, analytics, and more.</p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
