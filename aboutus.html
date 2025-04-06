@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Weather Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-box {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #eee;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #ffeb3b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Our Weather App 🌤️</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>🌐 Project Overview</h2>
+      <p>This Weather Website is part of our Project-Based Learning (PBL) initiative. It is designed to provide real-time weather updates, interactive analytics, and a user-friendly interface for better weather insights. Built using modern web technologies and free APIs.</p>
+    </section>
+
+    <section>
+      <h2>🔧 Features</h2>
+      <div class="features">
+        <div class="feature-box">
+          <h3>Live Weather Data</h3>
+          <p>Get current weather based on city name or your GPS location with dynamic weather details.</p>
+        </div>
+        <div class="feature-box">
+          <h3>3-Day Forecast</h3>
+          <p>Includes forecast for the next 3 days with temperature, wind, humidity, and pressure info.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Weather Analytics</h3>
+          <p>Interactive charts for temperature trends, humidity, wind speed, and simulated pressure data.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Dynamic Background</h3>
+          <p>The background changes automatically based on the current weather condition.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Interactive Weather Map</h3>
+          <p>Click anywhere on the map to see weather details using Leaflet and OpenStreetMap.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Login Authentication</h3>
+          <p>Simple login page with hardcoded credentials for access control to the main app.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>👨‍💻 Developed By</h2>
+      <p><strong>Omkar [BE Information Technology, SPPU]</strong><br>Guided by faculty as part of PBL curriculum.</p>
+    </section>
+
+    <section>
+      <h2>📁 Source Code</h2>
+      <p>You can find the complete source code of this weather app on <a href="https://github.com/YOUR_USERNAME/YOUR_REPOSITORY" target="_blank">GitHub</a>. Contributions and feedback are welcome!</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 WeatherApp by Omkar | Powered by WeatherAPI, LeafletJS & ChartJS
+  </footer>
+</body>
+</html>
